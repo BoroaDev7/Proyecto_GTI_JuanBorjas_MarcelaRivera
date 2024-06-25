@@ -1,0 +1,20 @@
+### Test API redmine
+@key =991a4175e614a1c191e6f3d1e2f88163f091e8ad
+
+
+
+### Create issue
+POST http://192.168.0.12/redmine/issues.json
+X-Redmine-API-Key:991a4175e614a1c191e6f3d1e2f88163f091e8ad
+Content-Type: application/json
+
+{
+  "issue": {
+    "project_id": "boroa_merv",
+    "subject": "Ticket subject",
+    "description": "Papitas Con chile",
+    "tracker_id": 2,
+    "status_id": 3,
+    "priority_id": 4
+  }
+}
